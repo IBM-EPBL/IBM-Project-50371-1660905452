@@ -1,0 +1,157 @@
+h1 {
+  color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+
+/* .n {
+  height: 50px;
+  margin: 0;
+} */
+/* .logo {
+  float: left;
+  font-size: x-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 70px;
+} */
+body {
+  margin: 0;
+  background-color: aliceblue;
+  background-image: linear-gradient(225deg, rgb(249, 244, 249) 50%, black 50%);
+  background-attachment: fixed;
+  max-height: 100 vh;
+
+  /* background-image: url('lib.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%; */
+}
+
+.svg img {
+  height: 500;
+  width: 500;
+  /* padding-bottom: 200; */
+  padding-left: 100;
+  padding-top: 80;
+}
+header {
+  width: 100%;
+  height: 60px;
+}
+.search {
+  background-color: aliceblue;
+  height: 50px;
+  width: 200;
+  border-radius: 60px;
+}
+
+input {
+  /* background-color: aliceblue; */
+  /* border-radius: 45px; */
+  margin: 20px;
+  border-style: none;
+}
+
+nav {
+  background-color: rgb(0, 0, 0);
+  height: 60px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+} */
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  height: 60px;
+}
+nav li {
+  float: right;
+  display: inline-block;
+}
+nav li a {
+  color: aliceblue;
+  display: block;
+  font-size: 20px;
+  margin: 10px;
+  text-decoration: none;
+  padding: 3px 10px;
+  font-weight: 100;
+}
+li.active a {
+  background-color: rgb(251, 251, 251);
+  color: black;
+  border-radius: 60px;
+}
+li a:hover {
+  background-color: rgb(225, 225, 224);
+  color: rgb(9, 9, 9);
+  text-decoration: none;
+  border-radius: 60px;
+}
+.panels-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.panel left-panel {
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+.panel right-panel {
+  pointer-events: none;
+  padding: 3rem 12% 3rem 17%;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+}
+button {
+  background-color: #2f2e41;
+  border-radius: 0 60px 60px 0;
+  margin-inline: 5px;
+  color: white;
+  border: none;
+  height: 50px;
+  cursor: pointer;
+}
+.display {
+  border: white;
+  border-width: thick;
+  position: absolute;
+  height: 200;
+  width: 200;
+  top: 300px;
+  left: 200px;
+}
+.result {
+  padding-top: 300px;
+}
+form {
+  position: absolute;
+  height: 10;
+  /* width: 0; */
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -250%);
+  /* width: 320px; */
+  background-color: aliceblue;
+  padding-bottom: 50px;
+  border-radius: 50px;
+}
+
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
