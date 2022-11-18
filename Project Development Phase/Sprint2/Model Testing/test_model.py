@@ -1,0 +1,11 @@
+img = Image.open('6.png')
+img = img.resize((28,28))
+img = np.array(img)
+img = tf.image.rgb_to_grayscale(img)
+img = img.numpy()
+img = np.invert(img)
+img = img.astype('float')
+img = img/255.0
+img = np.expand_dims(img,axis=0)
+pred = model1.predict(img)
+prediction = np.argmax(pred)
