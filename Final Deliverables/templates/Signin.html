@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/sign.css')}}">
+    <header>
+        <nav>
+            <ul>
+                <li class="active"><a href="login">Sign in</a></li>
+                <li><a href="Contact">Contact</a></li>
+			        	<li><a href="About">About</a></li>
+				        <li><a href="lib.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+  </head>
+  <body>
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <img src=" {{ url_for('static', filename='undraw_welcome_cats_thqn.svg') }}">
+      </div>
+      <div class="panel right-panel">
+    <div class="center">
+      <h1><b>Sign in</b></h1>
+      
+      <form class="login_form" action="/" method="POST" >
+        <div class="txt_field">
+          <input type="text" name="username" placeholder="Enter Mail Id or Username" required>
+          <span></span>
+        </div>
+        <div class="txt_field">
+          <input type="password" name="password" placeholder="Enter Password" required> 
+          <span></span>
+        </div>
+        <button value="submit" onsubmit="Alert()" >Sign in</button>
+
+      </div>
+      </div>
+        
+        
+        <!--<label><input type="checkbox"> Remember me</label>
+        <div class="pass">Forgot Password?</div>
+        <div class="signup_link">
+          Not a member? <a href="#">Signup</a>
+        </div>-->
+      </form>
+      {% if valid == 'invalid credentials' %}
+        <script>
+            alert("invalid credentials")
+        </script>
+    {% endif %}
+    </div>
+    
+  </body>
+</html>
